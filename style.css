@@ -153,4 +153,16 @@ h2 {
   transform: translateY(-5px);
 }
 
+footer {
+  background-color: #45567d;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: white;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

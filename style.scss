@@ -168,3 +168,16 @@ h2 {
     }
   }
 }
+
+footer {
+  background-color: #45567d;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: white;
+    text-align: center;
+  }
+}

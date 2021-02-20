@@ -8,6 +8,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+
 #header {
   position: sticky;
   left: 0;
@@ -36,5 +41,19 @@ body {
     &:visited {
       color: white;
     }
+  }
+}
+
+#welcome-section {
+  background-color: #27272a;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    color: #be3144;
+    font-size: 1.5rem;
   }
 }

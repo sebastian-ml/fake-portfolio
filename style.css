@@ -13,10 +13,16 @@ h1 {
   font-size: 3.5rem;
 }
 
+h2 {
+  color: white;
+  font-size: 2.3rem;
+}
+
 #header {
   position: sticky;
   left: 0;
   top: 0;
+  z-index: 100;
 }
 
 .navbar {
@@ -35,7 +41,7 @@ h1 {
   font-size: 1.2rem;
 }
 .navbar__item:hover {
-  background-color: #45567d;
+  background-color: #394a67;
 }
 .navbar__item:visited {
   color: white;
@@ -52,6 +58,70 @@ h1 {
 #welcome-section p {
   color: #be3144;
   font-size: 1.5rem;
+}
+
+#projects {
+  background-color: #45567d;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#projects a {
+  text-decoration: none;
+}
+#projects a:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#projects h2 {
+  padding: 1.5em 0 1em;
+  text-align: center;
+}
+#projects img {
+  width: 100%;
+  display: block;
+}
+#projects figcaption {
+  color: white;
+  text-align: center;
+  padding: 0.5em 0;
+  font-size: 1.2rem;
+  background-color: #394a67;
+}
+#projects button {
+  margin: 2em;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  padding: 0.5em;
+  font-size: 1.1rem;
+  transition: 200ms all ease-in-out;
+}
+#projects button:hover {
+  background-color: #be3144;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 200ms ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
